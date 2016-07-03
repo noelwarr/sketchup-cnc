@@ -1,0 +1,23 @@
+{
+	"name":"busellato",
+	"postProcessor":{
+		"jobHeader":[
+			"G71X<WORKPIECE_X>Y<WORKPIECE_Y>Z<WORKPIECE_Z>T00",
+			"G150()A0B0C0"
+		],
+		"jobFooter":[
+			"G92G54P5Z=cY=bX=a",
+			"M2"
+		],
+		"toolPathStart": [
+			"G88G55P5T01c<USERDATA_T><USERDATA_R><USERDATA_L>X<X>Y<Y>Z<Z>"
+		],
+		"toolPathStep": [
+			"G1X<X>Y<Y>Z<Z>"
+		],
+		"flags":{
+			"R":"G42",
+			"L":"G41"
+		}
+	}
+}
